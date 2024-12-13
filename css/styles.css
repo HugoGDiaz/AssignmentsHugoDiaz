@@ -1,0 +1,819 @@
+/* :root {
+    --brand-blue: #ed1010;
+} */
+
+* {
+    text-decoration: none;
+}
+
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.toggle-btn svg, 
+.back-btn svg {
+    height: 1.5rem;
+}
+
+svg {
+    height: 1.5rem;
+}
+
+h2, h3 {
+    font-family: "Inria Sans", serif;
+}
+
+p {
+    font-family: "Inter", serif;
+}
+
+.nav-top {
+    background-color: black;
+    padding: 12px;
+}
+
+.nav-top ul {
+    display: flex;
+    justify-content: start;
+    padding: 0 24px;
+    gap: 2rem;
+}
+
+.nav-top ul li {
+    white-space: nowrap;
+    font-size: 1.2rem;
+    min-width: 120px;
+
+}
+
+.nav-top ul li a {
+    font-family: "Inter", serif;
+    color: #fff;
+}
+
+.nav-top ul li a:hover {
+    text-decoration: underline;
+}
+
+.nav-top ul li:nth-child(1) {
+    font-weight: bold;
+}
+
+.nav-top ul li:nth-child(2) {
+    font-style: italic;
+    font-weight: 100;
+}
+
+.nav-top ul li:nth-child(3) {
+    font-weight: 400;
+}
+
+.logo-navbar {
+    display: flex;
+    padding: 16px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-navbar .logo {
+    font-weight: 400;
+    font-size: 4rem;
+    padding-right: 1rem;
+}
+ 
+.logo-navbar .logo a {
+    font-family: "Inria Serif", sans-serif;
+    color: black;
+}
+
+.logo-navbar .logo a:hover {
+    color: #6178A6;
+    transform: scale(1.05);
+}
+
+.toggle-btn {
+    font-size: 6rem;
+    padding-top: 24px;
+}
+
+.toggle-btn svg {
+    width: 1.2em;
+    height: 1.2em;
+}
+
+.toggle-btn svg path {
+    fill: black;
+}
+
+.toggle-btn svg path:hover {
+    fill: #6178A6;
+}
+
+nav {
+    display: none;
+}
+
+.sale-banner .bck-img {
+    background-image: url(../img/mother-son.webp);
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+}
+
+.sale-banner > div {
+    background-color: #989898;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+}
+
+.sale-banner h2 {
+    font-size: 7rem;
+}
+
+.sale-banner p {
+    font-size: 3rem;
+}
+
+.shop-division > div p {
+    font-family: "Inter", serif;
+}
+
+.shop-division h2 {
+    font-size: 3rem;
+    text-align: left;
+    padding: 32px;
+    width: 100%;
+}
+
+.shop-division {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 2rem 0;
+}
+
+.shop-division > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    max-width: 300px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.shop-division > div img {
+    max-width: 100%;
+    height: auto;
+}
+
+.shop-division h3, .shop-division p {
+    text-align: left;
+    margin: 10px 0;
+}
+
+.shop-division > div a {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    text-decoration: none;
+    color: #6178A6;
+}
+
+.shop-division > div a:hover {
+    color: #4A90E2;
+    transform: translateX(5px);
+}
+
+.card-text {
+    padding: 1rem;
+}
+
+.perk-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 2rem;
+}
+
+.perk-cards > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    text-align: center;
+    max-width: 300px;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.perk-cards h3, .perk-cards p {
+    margin: 0;
+    width: 100%;
+}
+
+.perk-cards h3 {
+    font-size: 1.2rem;
+}
+
+.perk-cards p {
+    font-size: 1rem;
+}
+
+.scrollable-title {
+    font-size: 2rem;
+    text-align: left;   
+    padding: 32px;
+    width: 100%;
+}
+
+.scrollable {
+    display: flex;
+    gap: 1rem;
+    overflow-x: scroll;
+    margin-bottom: 3rem;
+}
+
+.scrollable section {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-shadow: 3px 3px 3px #eee;
+    flex: 0 0 300px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.scrollable a {
+    font-weight: 400;
+}
+
+.card-body {
+    text-align: center;
+    padding: 1rem;
+}
+
+.card-body a {
+    font-family: "Inter", serif;
+    color: black;
+}
+
+.card-body a:hover {
+    color: #6178A6;
+    letter-spacing: 0.2px;
+}
+
+.scrollable::-webkit-scrollbar {
+    background-color: #eee;
+    width: .5rem;
+}
+.scrollable::-webkit-scrollbar-thumb {
+    border-radius: 2rem;
+    background-color: #444;
+}
+
+.scrollable {
+    scrollbar-color: #444 #eee;
+    scrollbar-width: thin;
+}
+
+footer {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.footer-column {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.footer-column h3 {
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column li {
+    margin: 5px 0;
+}
+
+.footer-column a {
+    text-decoration: none;
+    color: #000;
+    font-family: "Inter", serif;
+    font-size: 1rem;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+} 
+
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 0;
+    flex-wrap: wrap;
+}
+
+.footer-bottom div {
+    margin: 0 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.footer-bottom div a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-bottom div a:hover {
+    text-decoration: underline;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.65);
+    min-height: 100vh;
+    min-width: 100%;
+    position: fixed;
+    top: 0;
+    display: none;
+}
+
+.modal {
+    background-color: white;
+    border-radius: 8px;
+    max-width: 540px;
+    width: calc(100% - 2rem);
+    margin: 1rem;
+    position: fixed;
+    left: 50vw;
+    top: 50vh;
+    transform: translate(calc(-50% - 1rem), calc(-50% - 1rem));
+    overflow: hidden;
+}
+
+.modal-bg {
+    background: url(../img/modal-window-lg.webp) center / cover no-repeat;
+    height: 400px;
+}
+
+.modal-body {
+    padding: 4rem 2rem;
+}
+
+.modal-body h2 {
+    font-size: 3rem;
+    padding: 16px 0;
+}
+
+.modal-body p {
+    padding: 16px 0;
+}
+
+.close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: none;
+    padding: 2px;
+    cursor: pointer;
+    background: none;
+    font-size: 1.25rem;
+    margin: 0 0 1.2rem auto;
+    cursor: pointer;
+}
+
+.close svg {
+    width: 1.5rem;
+}
+
+.close:hover, .close:hover path {
+    font-weight: bold;
+    stroke: #000;
+}
+
+.reg-fm button {
+    height: 3rem;
+    border: none;
+    padding: 0 1rem;
+    background-color: #6178A6;
+    border-radius: 4px;
+}
+
+.sign-up-btn {
+    background-color: #6178A6;
+    width: 100%;             
+    text-align: center;      
+    padding: 10px;           
+    font-size: 16px;   
+}
+
+
+[type="button"] {
+    color: white;
+    transition: all .3s;
+    flex: 0 1 20%;
+    font-family: "Inria Sans", serif;
+}
+
+[type="button"]:hover {
+    background-color: #304163;
+    cursor: pointer;
+}
+
+.back-btn span {
+    padding: 0 8px;
+}
+
+.reg-body {
+    margin: 0 auto;
+    max-width: 650px;
+}
+
+.back-btn {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin: 1rem;
+}
+
+.back-btn a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+.back-btn a:hover {
+    text-decoration: underline;
+}
+
+.reg-title {
+    text-align: center;
+    font-size: 1rem;
+    margin: 0 0 16px ;
+}
+
+.reg-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.reg-menu ul {
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.reg-menu ul li {
+    margin: 0.5rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;  
+}
+
+.reg-menu ul li a {
+    text-decoration: none;
+    color: rgb(2, 2, 2);  
+}
+
+.reg-menu ul li a:hover {
+    text-decoration: underline;
+}
+
+.reg-menu ul li:nth-child(1) {
+    font-weight: bold;
+}
+
+.reg-menu ul li:nth-child(2) {
+    font-style: italic;
+    font-weight: 100;
+}
+
+.reg-menu ul li:nth-child(3) {
+    font-weight: 400;
+}
+
+.reg-menu ul li:nth-child(4) {
+    font-family: "Inria Serif", sans-serif;
+    font-size: 1.6rem;
+}
+
+.reg-fm,
+.acc-fm {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    margin: 20px;
+    box-shadow: none;
+}
+
+.reg-fm {
+    text-align: left;
+}
+
+.reg-fm-top h1, p {
+    margin-bottom: 24px;
+}
+
+.reg-fm input[type="text"],
+.reg-fm input[type="email"],
+.reg-fm input[type="password"] {
+    border: 1px solid rgba(0, 0, 0, 1);
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 8px;
+    font-family: "Inria Sans", serif;
+}
+
+.reg-fm input[type="submit"] {
+    display: block;
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #6178A6;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.reg-fm input[type="submit"] {
+    margin: 24px;
+}
+
+.help {
+    font-size: .8rem;
+    opacity: .5;
+    padding: 8px 0;
+}
+
+.input-container {
+    margin-bottom: 24px;
+}
+
+#agree {
+    accent-color: #007AFF;
+}
+
+.acc-fm .accordion {
+    margin-top: 20px;
+}
+.acc-fm .accordion-item {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 15px 0;
+}
+
+.acc-fm .accordion-item:first-child {
+    border-top: none;
+}
+
+.offer-title {
+    font-weight: 700;
+}
+
+.input-container label {
+    font-weight: 800;
+}
+
+.password-req ul {
+    padding: 10px 16px;
+    margin-top: -24px;
+}
+.password-req ul li {
+    list-style-type: disc;
+    padding: 3px;
+}
+
+.note-disc {
+    display: flex;         
+    align-items: center;   
+    gap: 10px;            
+}
+
+.note-disc svg {
+    width: 16px;           
+    height: 16px;        
+}
+
+.note-disc p {
+    margin: 0;
+    font-size: .7rem;
+    opacity: .5;
+}
+
+.reg-fm h1,
+.reg-fm label,
+.reg-fm .input-submit,
+.acc-fm h4 {
+    font-family: "Inria Sans", serif;
+}
+
+.acc-fm .accordion-header * {
+    display: flex;
+}
+
+.acc-fm .accordion-header button {
+    background: none;
+    justify-content: space-between;
+    border: none;
+    color: #6178A6;
+    font-size: 16px;
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+}
+
+.acc-fm .accordion-item {
+    display: block;
+    padding: 10px 0;
+}
+
+.acc-fm .accordion-item .accordion-content {
+    display: none;
+    padding: 10px;
+}
+
+.acc-fm .accordion-item .accordion-content.expanded {
+    display: block;
+}
+
+.toggle-btn-acc:has(+ .expanded) svg {
+    transform: rotate(45deg);
+}
+input:not([type="submit"]):valid {
+    background: url(..//img/svg/check.svg) right 1.5rem center no-repeat;
+}
+
+input:invalid:not(:focus):not(:placeholder-shown) {
+    background: url(../img/svg/exclamation.svg) right 1.5rem center no-repeat;
+}
+
+.accordion-content {
+    display: none;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.accordion-content.expanded {
+    display: block;
+}
+
+.accordion-content.collapsed {
+    display: none;
+}
+
+@media (min-width: 780px) {
+    .toggle-btn {
+        display: block;
+    }
+
+    .toggle-btn svg {
+        display: none;
+    }
+
+    .logo-navbar .logo {
+        font-weight: 400;
+        font-size: 3rem;
+        padding-right: 12px;
+    }
+
+    .toggle-btn ul {
+        display: flex;
+        justify-content: flex-end;
+        margin: 0;
+        padding: 0;
+    }
+
+    .toggle-btn ul li a {
+        color: black;
+        font-family: "Inter", serif;
+        font-size: 1.6rem;
+        font-weight: 400;
+        padding: 8px 12px;
+        transition: color 0.3s ease;
+    }
+
+    .toggle-btn ul li a:hover {
+        color: rgb(109, 107, 107);
+    }
+
+    .nav-top ul li {
+        font-size: 1.8rem;
+    }
+
+    .sale-banner .bck-img {
+        position: relative;
+    }
+    
+    .sale-banner > div {
+        background-color: rgba(152, 152, 152, 0.5);
+        position: absolute;
+        bottom: 15%;
+        color: #fff;
+        text-align: center;
+        align-items: center;
+        overflow: hidden;
+        width: 100%;
+        max-width: 1440px;
+    }
+
+    .sale-banner-text {
+        display: flex;
+        justify-content: space-around;
+        padding: 0 16px;
+    }
+
+    .sale-banner > div {
+        align-items: end;
+    }
+
+    .sale-banner-text h2 {
+        font-size: 6rem;
+    }
+
+    .sale-banner-text p {
+        font-size: 2.5rem;
+    }
+
+    .shop-division {
+        flex-direction: row;
+    }
+
+    .shop-division > div {
+        width: 30%;
+    }
+
+    .perk-cards {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .perk-cards > div {
+        width: 22%;
+        max-width: none;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .footer-column {
+        width: max-content;
+        max-width: 100%;
+        margin-bottom: 0;
+        margin-right: 60px;
+    }
+
+    .footer-column div {
+        padding: 0 3rem;
+    }
+
+    .modal {
+        max-width: 960px;
+    }
+    
+    .modal-body {
+        padding: 6rem 4rem;
+    }
+
+    .modal-bg {
+        width: 400px;
+        max-width: 600px;
+        height: unset;
+    }
+
+    .wide-flex {
+        display: flex;
+    }
+  
+}
